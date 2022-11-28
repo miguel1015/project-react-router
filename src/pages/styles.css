@@ -1,0 +1,62 @@
+h1{
+    text-align: center;
+    color: aliceblue;
+}
+
+
+.links-links{
+    border: 5px solid white;
+    background-color: rgb(25, 91, 150);
+    width: 100%;
+    height: 50px;
+    display: flex ;
+    border-width: 10px;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.link1{
+    color: white;
+    display: inline-flex;
+}
+
+.link1:hover{
+    background-color: springgreen;
+}
+
+.link2{
+    color: white;
+}
+
+.link2:hover{
+    background-color: springgreen;
+}
+
+.link3{
+    color: white;
+}
+
+.link3:hover{
+    background-color: springgreen;
+}
+
+.link4{
+    color: white;
+}
+
+.link4:hover{
+    background-color: springgreen;
+}
+
+
+.link5{
+    color: white;
+}
+
+.link5:hover{
+    background-color: springgreen;
+}
+
+.parrafo{
+    color: aliceblue;
+}
