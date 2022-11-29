@@ -1,5 +1,6 @@
 import "./pagina.css"
-
+import React ,{Suspense, lazy} from "react"
+// const img = lazy(() => import ("../components/"))
 import { useNavigate } from "react-router-dom"
 
 export default function Bill() {
@@ -19,7 +20,10 @@ Since 1987, Gates has been included in the Forbes list of the world's wealthiest
 
 Later in his career and since leaving day-to-day operations at Microsoft in 2008, Gates has pursued many business and philanthropic endeavors. He is the founder and chairman of several companies, including BEN, Cascade Investment, bgC3, and TerraPower. He has given sizable amounts of money to various charitable organizations and scientific research programs through the Bill & Melinda Gates Foundation, reported to be the world's largest private charity.[18] Through the foundation, he led an early 21st century vaccination campaign that significantly contributed to the eradication of the wild poliovirus in Africa.[19][20] In 2010, Gates and Warren Buffett founded The Giving Pledge, whereby they and other billionaires pledge to give at least half of their wealth to philanthropy.
         </p>
+        <Suspense fallback={<h1> esperaaaaaaa.... </h1>}> 
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Bill_Gates_2017_%28cropped%29.jpg/800px-Bill_Gates_2017_%28cropped%29.jpg" alt="" />
+        </Suspense>
+
       </div>
       <button onClick={()=>{navigate("/Home")}}> change to Home page </button>
     </div>
