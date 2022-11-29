@@ -1,7 +1,7 @@
-import { Routes, Route, Link, BrowserRouter } from "react-router-dom"
+import { Routes, Route } from "react-router-dom"
 import { Container } from "react-bootstrap"
 import { Home } from "./pages/Home"
-import { Store } from "./pages/Store"
+import  {Contact}  from "./pages/Contact"
 import { About } from "./pages/About"
 import { Navbar } from "./components/Navbar"
 import { ShoppingCartProvider } from "./context/ShoppingCartContext"
@@ -10,7 +10,9 @@ import  Brenda  from "./components/brenda"
 import  Dennis  from "./components/dennis"
 import  Mark  from "./components/mark"
 import  Steve  from "./components/steve"
+
 import "./estilos.css"
+// import { Suspense } from "react"
 
 
 function App() {
@@ -20,13 +22,14 @@ function App() {
       <Container className="container">
         <Routes>
           <Route path="/Home" element={<Home />} />
-          <Route path="/store" element={<Store />} />
+          <Route path="/store" element={<Contact />} />
           <Route path="/about" element={<About />} />
           <Route path="/bill" element={<Bill/>} />
           <Route path="/brenda" element={<Brenda />} />
           <Route path="/dennis" element={<Dennis />} />
           <Route path="/mark" element={<Mark />} />
           <Route path="/steve" element={<Steve />} />
+          
         </Routes>
       </Container>
 
